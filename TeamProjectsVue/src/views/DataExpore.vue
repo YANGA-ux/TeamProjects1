@@ -1,5 +1,5 @@
 <template>
-  <div class="Echarts">
+  <div class="Echarts" style="background: #fff">
     <div id="orderPeople" style="width: 1200px; height: 400px;"></div>
     <div id="orderSection" style="width: 1200px; height: 400px;"></div>
     <div id="orderGender" style="width: 540px; height: 500px;float:left"></div>
