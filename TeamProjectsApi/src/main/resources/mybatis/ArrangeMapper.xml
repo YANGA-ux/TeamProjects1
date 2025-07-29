@@ -2,14 +2,14 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.txm.hospital.mapper.ArrangeMapper">
+<mapper namespace="com.txm.teamprojects.mapper.ArrangeMapper">
     <!--定义封装account和user的resultMap-->
-    <resultMap id="arrangeDoctorMap" type="com.txm.hospital.pojo.Arrange">
+    <resultMap id="arrangeDoctorMap" type="com.txm.teamprojects.pojo.Arrange">
         <id property="arId" column="ar_id" />
         <result property="arTime" column="ar_time" />
         <result property="dId" column="d_id" />
         <!--一对一的关系映射，配置封装user的内容 column中指名从表的外键 property="user"指的是单个实体类的引用-->
-        <association property="doctor" javaType="com.txm.hospital.pojo.Doctor">
+        <association property="doctor" javaType="com.txm.teamprojects.pojo.Doctor">
             <result property="dId" column="d_id" />
             <result property="dName" column="d_name"/>
             <result property="dGender" column="d_gender"/>
